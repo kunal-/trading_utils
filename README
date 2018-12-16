@@ -1,0 +1,5 @@
+# Trading Utils
+Trading Utilts for experiments on NSE. 
+
+To start populate stocks_time.py with the symbols and times
+you are interseted in.
