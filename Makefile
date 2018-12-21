@@ -1,5 +1,5 @@
 run: data/NIFTY.csv
-	python bolliger_bands.py
+	python daily_returns.py
 
 data/NIFTY.csv: stocks_time.py
 	python get_data.py

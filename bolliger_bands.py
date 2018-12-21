@@ -11,9 +11,8 @@ def bolliger_bands(df):
     lower_band = mean - (std*2)
     return (upper_band, mean, lower_band)
 
+
 if __name__ == '__main__':
-    #df = merge_columns()
-    #df = df/df.ix[0, :] #normalize
     nifty = load_data('NIFTY')
     nifty = nifty['Close']
 
@@ -26,3 +25,4 @@ if __name__ == '__main__':
     ax.set_ylabel('Price')
     ax.legend(loc='upper left')
     plt.show() 
+
