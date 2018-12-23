@@ -10,8 +10,10 @@ def get_sharpe_ratio(weights, args):
 
 if __name__ == '__main__':
     df = merge_columns("Close")
-    close = df.ix[600:, :]
-    df = df.ix[:600, :]
+    # Split half data for asset allocation and half for testing
+    half = df.shape[0]/2
+    close = df.ix[half:, :]
+    df = df.ix[:half, :]
     df = get_daily_returns(df)
     df = df.ix[:, 1:]
     close = close.ix[:, 1:]
