@@ -1,5 +1,5 @@
 run: data/NIFTY.csv
-	python daily_returns.py
+	python asset_allocation.py
 
 data/NIFTY.csv: stocks_time.py
 	python get_data.py
